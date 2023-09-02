@@ -5,6 +5,7 @@ Group Tutor:  daanyaal salie
 Project Tile: Ping Pong
 
 Code: (Instructions on how to run the code)
+The code should be saved from github by pulling or saving directly. Open android studio and open saved file. Run the code and enjoy the game.
 
 Tools: whether on cmd,android studio or other programme
 
