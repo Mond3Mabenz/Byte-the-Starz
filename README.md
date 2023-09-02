@@ -13,3 +13,7 @@ Assumptions: (Hypothesis on how game will run)
 The game should have two paddles on opposite ends, moved by user...(continue)
 
 Limitations(What the game cant do)
+-Ball must not be predictable direction.
+-Paddle can't move freely,must move only in y-axis
+-Paddle must not their own
+-Point must not give free scores,the ball has to pass the paddle for it to count as a score
