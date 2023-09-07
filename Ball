@@ -1,7 +1,8 @@
 public class Ball{
 	private int x, y, cx, cy, speed, size;
 	private Color color;
-	
+
+        //this "Ball" method actually constructs the ball with established variables above.
 	public Ball(int x, int y, int cx, int cy, int speed, Color color, int size){
 		this.x = x;
 		this.y = y;
@@ -14,6 +15,7 @@ public class Ball{
 	}
 	
 	public void paint(Graphics g){
+                //sets the brush colour to the ball colour
 		g.setColor(color);
 		
 		g.fillOval(x, y, size, size);
