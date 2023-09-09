@@ -6,7 +6,7 @@ import java.awt.GraphicsConfiguration;
 //called to create window; set size ; set colour
 
 //in main/logical class the window should be called for example(CreateWindow win = new CreateWindow();
-win.size(23, 45); and that should make window to our settings
+//win.size(23, 45); and that should make window to our settings
 
 public class CreateWindow{
   static JFrame frame = new JFrame("Pings Pongs");
