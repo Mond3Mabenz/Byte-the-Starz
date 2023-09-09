@@ -9,6 +9,24 @@ import java.awt.GraphicsConfiguration;
 win.size(23, 45); and that should make window to our settings
 
 public class CreateWindow{
+  static JFrame frame = new JFrame("Pings Pongs");
+
+  public static void main(String[] args){
+    //exit n clse makes it possible so that the program exits on close button
+    frame.setDefaultCloseOperation(WindowConstans.EXIT_ON_CLOSE);
+
+    frame.setSize(700, 550);
+
+    PongGame game = new PongGame();
+
+    frame.add(game);
+
+    frame.setVisible(true);
+
+  }
+}
+//do not use code below for now
+/*public class CreateWindow{
   public static void main(String[] args){
     JFrame frame = new JFrame();
     frame.setSize(600,400);  //size adjustable,DO NOT PRESS THE ENLARGE BUTTON!!!!!
@@ -17,5 +35,5 @@ public class CreateWindow{
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setTitle("Test Frame");
     frame.setVisible(true);
-  }
-}
+  }*/
+
