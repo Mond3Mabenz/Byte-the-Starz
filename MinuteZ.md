@@ -34,3 +34,7 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 -> we learned the power of friendship
 -> patience is the key
 -> IMplemented class calling and naming varaibles properly
+
+/////////////////////////////////////////////////////////////////////
+14 SEPTEMBER 2023[Thursday]
+
