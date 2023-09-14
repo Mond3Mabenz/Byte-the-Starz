@@ -39,5 +39,6 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 14 SEPTEMBER 2023[Thursday]
 
 -> make shift demo is done
+-> making the objects move
 -> user interface, button, scores, graphics to be completed
 -> Potential for obstacles
