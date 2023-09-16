@@ -42,3 +42,7 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 -> making the objects move
 -> user interface, button, scores, graphics to be completed
 -> Potential for obstacles
+///////////////////////////////////////////////////////////////////
+16 SEPTEMBER 2023[Saterday]
+
+-> collision completed
