@@ -5,7 +5,7 @@ Below is the progress report of each time we meet
 
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-03 SEPTEMBER[Saterday]
+03 SEPTEMBER[Saturday]
 
 ->Paddle.md(still in progress)
 ->Window.md(example window works)
@@ -28,7 +28,7 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
     Resulted in fail
 
 //////////////////////////////////////////////////////////////////////
-09 SEPTEMBER 2023[Saterday]
+09 SEPTEMBER 2023[Saturday]
 
 -> Continuation from 7 Semptember 2023
 -> we learned the power of friendship
@@ -43,6 +43,8 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 -> user interface, button, scores, graphics to be completed
 -> Potential for obstacles
 ///////////////////////////////////////////////////////////////////
-16 SEPTEMBER 2023[Saterday]
+16 SEPTEMBER 2023[Saturday]
 
 -> collision completed
+-> Score code gave us 30 errors
+-> Button code still in progress
