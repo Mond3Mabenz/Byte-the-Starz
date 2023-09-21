@@ -18,7 +18,7 @@ public class PongGame extends JPanel implements MouseMotionListener{
 
 	
 	public PongGame(){
-		gameBall = new Ball(300, 200, 3, 3, 100, Color.BLACK, 25);
+		gameBall = new Ball(300, 200, 3, 3, 200, Color.BLACK, 25);
 		userPaddle = new Paddle(10, 200, 75, 3, Color.CYAN);
 		pcPaddle = new Paddle(610, 200, 75, 3, Color.MAGENTA);
 
@@ -44,7 +44,7 @@ public class PongGame extends JPanel implements MouseMotionListener{
 		//DRAWSTRING METHOD NEEDS A STRING TO PRINT AND LOCATION TO PRINT AT
 		//SORTA LIKE HOW TURLE WORKED BY REPOSITIONING IT THEN SETTING IT DOWN AND DRAWING
 		
-		g.setColor(Color.WHITE);
+		g.setColor(Color.BLACK);
 		g.drawString("Score - USER [ " + userScore + " ] PC [ " + pcScore + " ] ", 250, 20);
 		//checks if player lost a point? checks if  paddle failed to collide with the ball
 			if(gameBall.getX() < 0){
