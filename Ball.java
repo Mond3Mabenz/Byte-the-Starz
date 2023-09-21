@@ -60,4 +60,19 @@ public class Ball{
 	public int getSize(){
 		return size;
 	}
+	public void setX(int n){
+		this.x = n;
+	}
+	public void setY(int n){
+		this.y = n;
+	}
+	public void setCx(int n){
+		this.cx = n;
+	}
+	public void setCy(int  n){
+		this.cy = n;
+	}
+	public void setSpeed(int n){
+		this.speed = n;
+	}
 }
