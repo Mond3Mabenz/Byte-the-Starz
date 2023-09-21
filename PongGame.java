@@ -16,16 +16,11 @@ public class PongGame extends JPanel implements MouseMotionListener{
 	
 	//addMouseMotionListener(this);
 
-
-	public static void Paint(Graphics g){
-		g.setColor(Color.PURPLE);
-		g.fillRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-	}
 	
 	public PongGame(){
-		gameBall = new Ball(300, 200, 3, 3, 100, Color.ORANGE, 10);
-		userPaddle = new Paddle(10, 200, 75, 3, Color.VERY_DARK_BLUE);
-		pcPaddle = new Paddle(610, 200, 75, 3, Color.BLACK);
+		gameBall = new Ball(300, 200, 3, 3, 100, Color.BLACK, 25);
+		userPaddle = new Paddle(10, 200, 75, 3, Color.CYAN);
+		pcPaddle = new Paddle(610, 200, 75, 3, Color.MAGENTA);
 
 		userMouseY = 0;
 		//listen for motion event on this object(the mouse)
@@ -34,7 +29,7 @@ public class PongGame extends JPanel implements MouseMotionListener{
 
 	public void paintComponent(Graphics g){
 		
-		g.setColor(Color.BLACK);
+		g.setColor(Color.PINK);
 		g.fillRect(0,0, WINDOW_WIDTH, WINDOW_HEIGHT);
 		
 		//draws the ball
