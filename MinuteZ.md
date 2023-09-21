@@ -51,6 +51,6 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 
 //////////////////////////////////////////////////////////////////
 21 SEPTEMBER 2023[Thursday]
--> Continuation
+-> Continuation: the score has been done
 -> button code still in progress
 -> andriod studio
