@@ -48,3 +48,9 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 -> collision completed
 -> Score code gave us 30 errors
 -> Button code still in progress
+
+//////////////////////////////////////////////////////////////////
+21 SEPTEMBER 2023[Thursday]
+-> Continuation
+-> button code still in progress
+-> andriod studio
