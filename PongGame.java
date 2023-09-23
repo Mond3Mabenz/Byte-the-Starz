@@ -7,7 +7,7 @@ public class PongGame extends JPanel implements MouseMotionListener{
 	//Extends? 
 	//implements
 	
-	static final int WINDOW_WIDTH = 640, WINDOW_HEIGHT = 480;
+	static final int WINDOW_WIDTH = 640, WINDOW_HEIGHT = 550;
 	private Ball gameBall;
 	private Paddle userPaddle , pcPaddle;
     
@@ -20,7 +20,7 @@ public class PongGame extends JPanel implements MouseMotionListener{
 	public PongGame(){
 		gameBall = new Ball(300, 200, 3, 3, 200, Color.BLACK, 25);
 		userPaddle = new Paddle(10, 200, 75, 3, Color.CYAN);
-		pcPaddle = new Paddle(610, 200, 75, 3, Color.MAGENTA);
+		pcPaddle = new Paddle(765, 200, 75, 3, Color.MAGENTA);
 
 		userMouseY = 0;
 		//listen for motion event on this object(the mouse)
