@@ -41,7 +41,10 @@ public class CreateWindow implements ActionListener{
     jf.setSize(800, 550); //change width
     jf.setVisible(true);
   }
-
+  public void paintComponent(Graphics g){
+    g.setColor(Color.BLACK);
+	  g.drawString("WELCOME TO PING PONG...SCORE 7 TO BE VICTORIOUS!!!", 400, 50);
+  }
 
   public void actionPerformed(ActionEvent ae) {
       if (ae.getActionCommand().equals("Let's Play!!")) {
