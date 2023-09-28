@@ -54,3 +54,15 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 -> Continuation: the score has been done
 -> button code still in progress
 -> andriod studio
+
+/////////////////////////////////////////////////////////////////
+23 SEPTEMBER 2023[Saturday]
+
+/////////////////////////////////////////////////////////////////
+24 SEPTEMBER 2023[Monday]
+
+/////////////////////////////////////////////////////////////////
+28 SEPTEMBER 2023[Thursday]
+-> Andriod Studio
+-> Welcome Button
+-> Merging of Ball and Paddle class
