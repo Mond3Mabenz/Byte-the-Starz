@@ -124,5 +124,9 @@ public class PongGame extends JPanel implements MouseMotionListener{
 		gameBall.setCy(3);
 		gameBall.setSpeed(3);
 		int bounceCount = 0;
+
+		if(userScore >= 7 || pcScore >= 7){
+			gameStopped = true;
+		}
 	}
 }
