@@ -85,7 +85,7 @@ public class BallPaddle{
         return false;
     }
 
-    if
+    //if
     //ball code
     public void paint(Graphics g){
 		g.setColor(color);
