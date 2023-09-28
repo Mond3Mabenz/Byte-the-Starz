@@ -7,7 +7,7 @@ public class PongGame extends JPanel implements MouseMotionListener{
 	//Extends? 
 	//implements
 	
-	static final int WINDOW_WIDTH = 640, WINDOW_HEIGHT = 512;
+	static final int WINDOW_WIDTH = 800, WINDOW_HEIGHT = 512;
 	private BallPaddle gameBall;
 	private BallPaddle userPaddle , pcPaddle;
     
