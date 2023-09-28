@@ -64,6 +64,6 @@ https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong}
 /////////////////////////////////////////////////////////////////
 28 SEPTEMBER 2023[Thursday]
 -> Andriod Studio
--> Welcome Button
--> Merging of Ball and Paddle class
+-> Welcome Button(succes at changing the colour)
+-> Merging of Ball and Paddle class(completed)
 -> Adding music
