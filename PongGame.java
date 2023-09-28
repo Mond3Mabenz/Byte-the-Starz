@@ -13,6 +13,8 @@ public class PongGame extends JPanel implements MouseMotionListener{
     
 	private int userScore , pcScore  ;//this will be the initialiser
 	private int userMouseY;
+
+	private boolean gameStopped = false;
 	
 	//addMouseMotionListener(this);
 
@@ -32,31 +34,51 @@ public class PongGame extends JPanel implements MouseMotionListener{
 		g.setColor(Color.PINK);
 		g.fillRect(0,0, WINDOW_WIDTH, WINDOW_HEIGHT);
 		
-		//draws the ball
-		gameBall.paint(g);
+		//checks if game should stop due to a player winning.
+		if(userScore >= 7 || pcScore >=7){
+			String winner = (userScore >= 7)? "Player one wins" : "PC Wins";
+			g.setColor(Color.WHITE);
+			g.drawString(winner, 250, 200);
+			gameStopped = true;
+		}
+		else{
+			//draws the ball
+			gameBall.paint(g);
 		
-		//draws the paddles
-		userPaddle.colour_paddles(g);
-		pcPaddle.colour_paddles(g);
+			//draws the paddles
+			userPaddle.colour_paddles(g);
+			pcPaddle.colour_paddles(g);
+
+			g.setColor(Color.BLACK);
+			g.drawString("Score - USER [ " + userScore + " ] PC [ " + pcScore + " ] ", 250, 20);
+			
+			//checks if player lost a point? checks if  paddle failed to collide with the ball
+			if(!gameStopped){
+				if(gameBall.getX() < 0){
+					//the player has lost a point
+					pcScore++;
+					resetz();
+				}
+				else if(gameBall.getX() > WINDOW_WIDTH){
+					//THE PC HAS LOST
+					userScore++;
+					resetz();
+				}
+			}	
+			
+
+			
+		}
+		
+		
+		
 
 		//updates the score
 		//Under Scoring at Kevin guides for simple 2d game for java
 		//DRAWSTRING METHOD NEEDS A STRING TO PRINT AND LOCATION TO PRINT AT
 		//SORTA LIKE HOW TURLE WORKED BY REPOSITIONING IT THEN SETTING IT DOWN AND DRAWING
 		
-		g.setColor(Color.BLACK);
-		g.drawString("Score - USER [ " + userScore + " ] PC [ " + pcScore + " ] ", 250, 20);
-		//checks if player lost a point? checks if  paddle failed to collide with the ball
-			if(gameBall.getX() < 0){
-				//the player has lost a point
-				pcScore++;
-				resetz();
-			}
-			else if(gameBall.getX() > WINDOW_WIDTH){
-				//THE PC HAS LOST
-				userScore++;
-				resetz();
-			}
+		
 	}
 	
 	public void gameLogic(){
