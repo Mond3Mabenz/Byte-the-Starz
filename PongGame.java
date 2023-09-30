@@ -37,6 +37,8 @@ public class PongGame extends JPanel implements MouseMotionListener{
 		//checks if game should stop due to a player winning.
 		if(userScore >= 7 || pcScore >=7){
 			String winner = (userScore >= 7)? "Player one wins" : "PC Wins";
+			Font originalFont = new Font(originalFont.getName(), Font.PLAIN, 36);//Defines a larger Font
+			g.setFont(largeFont);
 			g.setColor(Color.WHITE);
 			g.drawString(winner, 250, 200);
 			gameStopped = true;
