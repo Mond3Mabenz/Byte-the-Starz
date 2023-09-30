@@ -20,19 +20,16 @@ public class CreateWindow implements ActionListener{
   JLabel label;
   static JFrame frame = new JFrame("Pings Pongs");
   Container pane = frame.getContentPane();
-  //static JButton b1 = new JButton("Button");
-  //new WelcomeButton();
   //exit n clse makes it possible so that the program exits on close button
   public static void main(String[] args){
     new CreateWindow();
   } 
   CreateWindow(){
-    jf = new JFrame("Example Buttons");
+    jf = new JFrame("Welcome screen");
     b1 = new JButton("Let's Play!!");
     label = new JLabel();
     b1.setSize(70, 40);
     jf.add(b1);
-    //jf.add(b2);
     jf.add(label);
     
     b1.addActionListener(this);
@@ -41,10 +38,23 @@ public class CreateWindow implements ActionListener{
     jf.setSize(800, 550); //change width
     jf.setVisible(true);
   }
-  public void paintComponent(Graphics g){
+  /*public void paintComponent(Graphics g){
     g.setColor(Color.BLACK);
 	  g.drawString("WELCOME TO PING PONG...SCORE 7 TO BE VICTORIOUS!!!", 400, 50);
-  }
+  }*/    // THE ABOVE CODE SHOULD BE THE WELCOME MESSAGE
+
+
+b1.addActionListener(this);
+jf.setLayout(new FlowLayout(FlowLayout.CENTER, 410, 220));
+
+jf.getContentPane().setBackground(Color.magenta);   //colour of background
+b1.setBackground(Color.green);		//change colour of buttun 
+b1.setPreferredSize(new Dimension(100,50));
+
+//the Layout sets in postion
+jf.setSize(800,550);  // change width
+jf.setVisible(true);
+}
 
   public void actionPerformed(ActionEvent ae) {
       if (ae.getActionCommand().equals("Let's Play!!")) {
