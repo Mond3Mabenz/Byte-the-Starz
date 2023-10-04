@@ -1,7 +1,8 @@
 import java.awt.*;
 
 public class BallPaddle{
-    
+    //this was inspired from https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong#paddles
+    //the ball and paddle were combined to make it easier for us to call new instances of the ball or paddle		
     //declare instance variables
     private int height, xdir, ydir, velocity;
     private Color paddcolor;
@@ -88,10 +89,10 @@ public class BallPaddle{
     //if
     //ball code
     public void paint(Graphics g){
+	        //https://www.javatpoint.com/java-awt-canvas
+                //paints in the given paremeters with the colour given
 		g.setColor(color);
-		
 		g.fillOval(x, y, size, size);
-		
 	}
 	
 	public void moveBall(){
@@ -123,15 +124,15 @@ public class BallPaddle{
 		cy *= -1;
 	}
 	
-	public int getY(){
+	public int getY(){ //accessor
 		return y;
 	}
 	
-	public int getX(){
+	public int getX(){ //accessor
 		return x;
 	}
 	
-	public int getSize(){
+	public int getSize(){ accessor
 		return size;
 	}
 
