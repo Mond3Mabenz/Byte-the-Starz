@@ -7,7 +7,8 @@ Project Tile: Ping Pong
 Code: (Instructions on how to run the code)
 The code should be saved from github by pulling or saving directly. 
 Download all the md files into one folder and save them as java.Open android studio and open saved file. Run the code and enjoy the game.
-Run the code from CreateWindow.java as it acts as our main
+(For running on normal Java cmd)Run the code from CreateWindow.java as it acts as our main. 
+(For running on Android Studio) Run the code from CreateWindowTwo. java as it acts as the main for the Android Studio version. 
 
 Tools: whether on cmd,android studio or other programme
 
